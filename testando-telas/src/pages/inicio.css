@@ -1,0 +1,352 @@
+/*estilos comuns*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #BC1818;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 0px 10px black;
+  }
+  #login-menu{
+    width: 61px;
+    height: 40px;
+  }
+  #cadastro-menu{
+    height: 40px;
+  }
+  .imglogo{
+    margin-top: 10%;
+    width: 237px;
+    height: 51.552px;
+    flex-shrink: 0;
+  }
+  #doe-agora{
+    width: 90px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: #146DC6;
+    border: none;  
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  #no-doador{
+    width: 133px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  #text-topo{
+    font-family: 'Poppins', sans-serif;
+  }
+  .topo-site{
+    border-bottom: 2px solid red ;
+    display: flex;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  button:hover {
+    transform: scale(1.08);
+  }
+  .text-doe-sangue button {
+    border: 2px solid #F00;
+    background: none;
+    border-radius: 8px;
+  }
+  .textos {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+  }
+  #bolinha_desfocada1{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    background: #FF8181;
+    z-index: 0;
+    position: absolute;
+    margin-left: 41%;
+    filter: blur(70px);
+  }
+  #direita_inicio{
+    width: 50%;
+  }
+  .text-doe-sangue{
+    margin-left: 10%;
+    z-index: 1;
+    position: absolute;
+  }
+  .text-doe-sangue h1 {
+    color: #D50000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .textos{
+    border-radius: 5px;
+    background: rgba(217, 217, 217, 0.30);
+  }
+  .seja-parceiro {
+    display: flex;
+    justify-content:space-between ;
+  }
+  .textos button {
+    border: 2px solid #F00;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-right: 10%;
+  }
+  .textos h3 {
+    font-size: 32px;
+    color: #146DC6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  .informacao{
+    width: 100%;
+  }
+  .textos h2 {
+    font-size: 32px;
+    color: #D50000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  .escrita-textos{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+  .beneficios {
+    display: flex;
+  }
+  .beneficios img{
+    max-height: 400px;
+  }
+  footer{
+    background: rgba(188, 24, 24, 0.86);
+    font-family: 'Poppins', sans-serif;
+    height: 200px;
+  }
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  #caminho_rede{
+    margin-left: 10%;
+  }
+  .icon_insta, .QR_insta{
+    width: 50px;
+    height: 50px;
+  }
+  #lado_direito_footer{
+    width: 50%;
+    margin-right: 20%;
+    display: flex;
+    gap: 20%;
+  }
+  
+  .rodape{
+    display: inline-flex;
+  }
+  footer ul{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  footer h4{
+    color: #ffffff;
+  }
+  footer a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  /* Estilos para telas grandes */
+  @media (min-width: 768px) {
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* Barra suspensa */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #BC1818;
+      padding: 10px;
+    }
+    .navbar-bran img {
+      width: 200px;
+      height: 50px;
+    }
+    .menu_item ul {
+      display: flex;
+      list-style-type: none;
+      margin: 10px;
+      padding: 0;
+    }
+    .menu_item a {
+      color: #ffffff;
+    }
+    .item-click,
+    .item-click:visited {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .menu_item button {
+      cursor: pointer;
+      background: none;
+      border: 1px solid white;
+      border-radius: 8px;
+      margin-left: 20px;
+    }
+    .topo-site {
+      display: flex;
+      justify-content: space-around;
+    }
+    .text-doe-sangue {
+      margin-top: 100px;
+    }
+    .btn-doe {
+      display: flex;
+      position: relative;
+      right: 25px;
+    }
+    .text-doe-sangue button {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    .seja-parceiro button {
+      margin-left: 100px;
+    }
+    .informacao {
+      margin-top: 70px;
+      width: 70vw;
+      margin-left: 200px;
+    }
+  
+    .textos {
+      margin-top: 30px;
+    }
+  
+    .textos h2,
+    h3,
+    p,
+    img {
+      
+      margin-bottom: 20px;
+    }
+  
+    hr {
+      color: #BC1818;
+    }
+  
+  
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 767px )  {
+  
+    /* Barra suspensa */
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar-bran img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    #end{
+      display: flex;
+      margin-left: 25px;
+    }
+  
+    .menu_item ul {
+      display: flow-root;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .menu_item button {
+      cursor: pointer;
+      background: none;
+      border: 1px solid white;
+      border-radius: 8px;
+      margin-left: 50px;
+    }
+  
+    .item-click,
+    .item-click:visited {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 10px;
+    }
+  
+    #imgsangue {
+      width: 300px;
+    }
+  
+    .topo-site {
+      text-align: center;
+    }
+  
+    .btn-doe {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      border-radius: 8px;
+    }
+  
+    .informacao {
+  
+      width: 90vw;
+      margin-top: 50px;
+      margin-left: 15px;
+    }
+  
+    hr {
+      color: #BC1818;
+    }
+  
+  
+    .textos {
+      margin-top: 20px;
+    }
+  
+    .beneficios{
+      flex-direction: column;
+    }
+  
+    .beneficios img {
+      max-width: 300px;
+      height: 300px;
+      
+    }
+  
+    footer a{
+      color: #ffffff;
+      text-decoration: none;
+  
+    }
+  
+  }

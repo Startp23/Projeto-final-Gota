@@ -1,185 +1,164 @@
 /*estilos comuns*/
 *{
-    margin: 0;
-    padding: 0;
-  }
-  .navbar {
+  font-family: 'Poppins', sans-serif;
+}
+.navbar {
     display: flex;
     align-items: center;
     background-color: #BC1818;
-    height: 50px;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 2px 0px 10px black;
-  }
-  #login-menu{
-    width: 61px;
-    height: 40px;
-  }
-  #cadastro-menu{
-    height: 40px;
-  }
-  .imglogo{
-    margin-top: 10%;
-    width: 237px;
-    height: 51.552px;
-    flex-shrink: 0;
-  }
-  #doe-agora{
-    width: 90px;
-    height: 35px;
-    font-size: 15px;
-    border-radius: 8px;
-    background: #146DC6;
-    border: none;  
-    color: #ffffff;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-  }
-  #no-doador{
-    width: 133px;
-    height: 35px;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-  }
-  #text-topo{
-    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 5px 10px  rgb(131, 130, 130);
   }
   .topo-site{
-    border-bottom: 2px solid red ;
-    display: flex;
+    border-bottom: 2px solid red;
   }
   a:hover {
     color: #ffffff;
     text-decoration: underline;
   }
+  
   button:hover {
     transform: scale(1.08);
   }
+  
   .text-doe-sangue button {
-    border: 2px solid #F00;
+    border: 1px solid #BC1818;
     background: none;
     border-radius: 8px;
+       transition: transform 100ms linear;
   }
-  .textos {
-    background-color: #D9D9D9;
-    border-radius: 8px;
+  #doe-agora{
+    color: #ffffff;
+    background: #146DC6;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    width: 90px;
+    height: 35px;
+    transition: transform 100ms linear;
+  }
+  #no-doador{
+    background: none;
+    border: 1px solid red;
+    font-size: 15px;
+    width: 130px;
+    height: 35px;
+    transition: transform 100ms linear;
   }
   #bolinha_desfocada1{
-    width: 150px;
-    height: 150px;
-    border-radius: 200px;
-    background: #FF8181;
+    height: 100px;
+    width: 100px;
+    border: 100px;
+    background: #BC1818;
+    filter: blur(70px);
     z-index: 0;
     position: absolute;
-    margin-left: 41%;
-    filter: blur(70px);
+    margin-left: 30%;
   }
-  #direita_inicio{
-    width: 50%;
-  }
-  .text-doe-sangue{
-    margin-left: 10%;
-    z-index: 1;
-    position: absolute;
-  }
-  .text-doe-sangue h1 {
-    color: #D50000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-  }
-  .textos{
+  .textos {
     border-radius: 5px;
     background: rgba(217, 217, 217, 0.30);
   }
-  .seja-parceiro {
-    display: flex;
-    justify-content:space-between ;
-  }
-  .textos button {
-    border: 2px solid #F00;
-    border-radius: 8px;
-    background-color: #ffffff;
-    font-size: 15px;
-    width: 150px;
-    height: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin-right: 10%;
-  }
-  .textos h3 {
-    font-size: 32px;
-    color: #146DC6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-  }
-  .informacao{
-    width: 100%;
-  }
-  .textos h2 {
-    font-size: 32px;
+  
+  .text-doe-sangue h1 {
     color: #D50000;
-    font-family: 'Poppins', sans-serif;
+  }
+  .titulos{
+    font-size: 30px;
     font-weight: 400;
   }
   .escrita-textos{
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
   }
+.textos h3{
+  font-size: 30px;
+  font-weight: 400;
+}
+  .seja-parceiro {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .textos button {
+    border: 1px solid #BC1818;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    transition: transform 100ms linear;
+    margin-right: 5%;
+  }
+  .textos button:hover {
+    transform: scale(1.08);
+  }
+  
+  .textos h3 {
+    color: #146DC6;
+  }
+  
+  .textos h2 {
+    color: #D50000;
+  }
+  
   .beneficios {
     display: flex;
   }
+  
   .beneficios img{
     max-height: 400px;
   }
+  
   footer{
-    background: rgba(188, 24, 24, 0.86);
-    font-family: 'Poppins', sans-serif;
-    height: 200px;
-  }
-  .footer-content{
+    background-color: #BC1818;
     display: flex;
     justify-content: space-between;
-    height: 100%;
-    align-items: center;
-  }
-  #caminho_rede{
-    margin-left: 10%;
-  }
-  .icon_insta, .QR_insta{
-    width: 50px;
-    height: 50px;
-  }
-  #lado_direito_footer{
-    width: 50%;
-    margin-right: 20%;
-    display: flex;
-    gap: 20%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
   }
   
-  .rodape{
-    display: inline-flex;
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
+  #lado_direito_footer{
+    display: flex;
+    width: 50%;
+  }
+  .rodape{
+    width: 50%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 10%;
+  }
+  .rodape-rede{
+    margin-top: 6%;
+  }
+
   footer ul{
     justify-content: center;
     display: flex;
     flex-direction: column;
   }
+  
   footer h4{
     color: #ffffff;
   }
+  
   footer a{
     color: #ffffff;
     text-decoration: none;
+  
   }
+  
+  
+  
   /* Estilos para telas grandes */
   @media (min-width: 768px) {
-    *{
-      margin: 0;
-      padding: 0;
-    }
+  
     /* Barra suspensa */
     .navbar {
       display: flex;
@@ -188,25 +167,30 @@
       background-color: #BC1818;
       padding: 10px;
     }
+  
     .navbar-bran img {
       width: 200px;
       height: 50px;
     }
+  
     .menu_item ul {
       display: flex;
       list-style-type: none;
       margin: 10px;
       padding: 0;
     }
+  
     .menu_item a {
       color: #ffffff;
     }
+  
     .item-click,
     .item-click:visited {
       color: #ffffff;
       text-decoration: none;
       padding: 10px;
     }
+  
     .menu_item button {
       cursor: pointer;
       background: none;
@@ -214,25 +198,32 @@
       border-radius: 8px;
       margin-left: 20px;
     }
+  
     .topo-site {
       display: flex;
       justify-content: space-around;
     }
+  
+  
     .text-doe-sangue {
       margin-top: 100px;
     }
+  
     .btn-doe {
       display: flex;
       position: relative;
       right: 25px;
     }
+  
     .text-doe-sangue button {
       font-size: 20px;
       margin-left: 20px;
     }
+  
     .seja-parceiro button {
       margin-left: 100px;
     }
+  
     .informacao {
       margin-top: 70px;
       width: 70vw;
@@ -259,7 +250,7 @@
   }
   
   /* Estilos para dispositivos móveis */
-  @media (max-width: 767px )  {
+  @media (max-width: 768px )  {
   
     /* Barra suspensa */
     .navbar {
@@ -285,14 +276,20 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+      margin-left: 15px;
+ 
     }
   
     .menu_item button {
+      height: 30px;
       cursor: pointer;
       background: none;
       border: 1px solid white;
-      border-radius: 8px;
-      margin-left: 50px;
+      border-radius: 5px;
+      margin-left: 30px;
+      font-size: 10px;
+      margin-top: 2%;
+  
     }
   
     .item-click,
@@ -350,3 +347,30 @@
     }
   
   }
+  @media (max-width: 350px ) {
+    .textos button {
+      border: 1px solid #BC1818;
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 10px;
+      height: 40px;
+      width: 150px;
+      margin-right: 5%;
+    }
+    footer ul{
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+    }
+    #caminho_rede{
+      display: none;
+    }
+    #lado_direito_footer{
+      display: flex;
+      width: 100%;
+    }
+    .rodape-rede{
+      margin-top: 19%;
+    }
+  } 

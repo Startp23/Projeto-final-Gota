@@ -1,5 +1,5 @@
-import React from 'react'
-import insta from '../img/instagram.png'
+
+
 import './inicio-pos.css';
 import logoB from '../img/logo_branca.png';
 import imagemI from '../img/imagem_inicio.png';
@@ -17,15 +17,82 @@ export default function inicio() {
       </div>
       <div id='end-inicio-pos' className='menu_item-inicio-pos'>
         <ul>
-          <Link to='/' className='item-click-inicio-pos' href="menu.jsx">Sair</Link>
-          <a className='item-click-inicio-pos' href="#text">Contatos</a>
+          <a type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              perfil
+            </a>
+            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h1 className="modal-title fs-5" id="staticBackdropLabel">Perfil do doador</h1>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div className="modal-body">
+
+                 <div className="ncompleto">
+        <label className="nomeCompleto">Nome Completo: </label>
+        <input type="text" id="nomeCompleto" required/>
+      </div>
+
+      <div className="fileira2">
+        <div className="CPF">
+          <label className="cpf">CPF: </label>
+          <input type="text" id="cpf" required/>
+        </div>
+
+        <div className="dnascimento">
+          <label className="dataNascimento">Nascimento: </label>
+          <input type="date" id="dataNascimento" required/>
+        </div>
+      </div>
+
+      <div className="email1">
+        <label className="email">E-mail: </label>
+        <input type="email" id="email" required/>
+      </div>
+      
+      <div className="fileira4">
+        <div className="tsanguineo">
+          <label className="tipoSanguineo">Tipo Sanguíneo: </label>
+          <select name="tipos" id="tiposanguineo">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="Ainda Nao Sei">Ainda não sei</option>
+          </select>
+        </div>
+
+        <div className="celular">
+          <label className="celular">Celular: </label>
+          <input type="tel" id="celular" required/>
+        </div>
+      </div>
+
+      <div className="endereço1">
+        <label className="endereco">Endereço: </label>
+        <textarea id="endereco" required></textarea>
+      </div>   
+                 
+                  </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button id='salvar' type="button" className="btn btn-primary">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <Link to='/DuvidasPos' className='item-click-inicio-pos' href="#text">Duvidas</Link>
           <a className='item-click-inicio-pos' href="#sobre-nos">Sobre nós</a>
-          <a className='item-click-inicio-pos' href="#sobre-nos">Perfil</a>
-          <Link to='' >
+          <Link to='/agende' >
               <button
                 id='login-menu-inicio-pos' className='item-click-inicio-pos' href="#text">Doar</button>
           </Link>
-          
+          <Link to='/' className='item-click-inicio-pos' href="menu.jsx">Sair</Link>
         </ul>
       </div>
     </nav>
@@ -46,8 +113,8 @@ export default function inicio() {
               corrente de solidariedade que faz<br /> a
               diferença no mundo.</p>
               <div className='btn-doe-inicio-pos'>
-            <button id='doe-agora-inicio-pos'>Doe agora</button>
-            <button id='no-doador-inicio-pos'>Não sou doador</button></div>
+            <Link to='/agende' ><button id='doe-agora-inicio-pos'>Doe agora</button></Link>
+            </div>
           </div>
         </div>
       </div>
@@ -55,13 +122,6 @@ export default function inicio() {
       {/*Imagem e título principal*/}
     
       <div className="informacao-inicio-pos">
-        <div id='cabron-inicio-pos'></div>
-        <div className='textos-inicio-pos'><h2 className='titulos-inicio-pos'>Junte-se a nós para salvar vidas!</h2>
-          <div className='seja-parceiro-inicio-pos'>
-            <p className='escrita-textos-inicio-pos'>Seja um parceiro em nossa missão de doação de sangue e<br /> faça a diferença na nossa cidade.</p>
-            <button>Seja um parceiro</button>
-          </div>
-        </div>
 
         <div className='textos-inicio-pos'>
           <h3>Qual a importância da doação de sangue?</h3>
@@ -112,10 +172,6 @@ export default function inicio() {
     <footer>
       <div className='footer-content-inicio-pos'>
         <div id='caminho_rede-inicio-pos' >
-          <ul>
-            <img className='icon_insta-inicio-pos' src={insta} alt="logo instagram" />
-            <img className='QR_insta-inicio-pos' src="" alt="Gr" />
-          </ul>
         </div>
         <div id='lado_direito_footer-inicio-pos'>
           <div className='rodape-inicio-pos'>
@@ -129,7 +185,7 @@ export default function inicio() {
           <div className='rodape-rede-inicio-pos'>
             <ul>
               <h4>Contatos</h4>
-              <a href="">Instagram</a>
+              <a href="https://instagram.com/gotade.esperanca?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D">Instagram</a>
           
             </ul>
           </div>

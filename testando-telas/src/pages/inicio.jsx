@@ -1,10 +1,11 @@
-import React from 'react'
-import insta from '../img/instagram.png'
+
+
 import './inicio.css';
 import logoB from '../img/logo_branca.png';
 import imagemI from '../img/imagem_inicio.png';
+
 import { Link } from 'react-router-dom';
-import '../App.css';
+
 
 export default function inicio() {
   return (
@@ -18,8 +19,8 @@ export default function inicio() {
       </div>
       <div id='end' className='menu_item'>
         <ul>
-          <a className='item-click' href="menu.jsx">Início</a>
-          <a className='item-click' href="#text">Contatos</a>
+          <Link to='/' className='item-click' href="menu.jsx">Início</Link>
+          <Link to='/duvidas' className='item-click' href="#text">Duvidas</Link>
           <a className='item-click' href="#sobre-nos">Sobre nós</a>
           <Link to='/login' >
               <button
@@ -51,8 +52,8 @@ export default function inicio() {
               corrente de solidariedade que faz<br /> a
               diferença no mundo.</p>
               <div className='btn-doe'>
-            <button id='doe-agora'>Doe agora</button>
-            <button id='no-doador'>Não sou doador</button></div>
+            <Link to='/login' ><button id='doe-agora'>Doe agora</button></Link>
+            <Link to='/cadastro'><button id='no-doador'>Não sou doador</button></Link></div>
           </div>
         </div>
       </div>
@@ -60,7 +61,6 @@ export default function inicio() {
       {/*Imagem e título principal*/}
     
       <div className="informacao">
-        <div id='cabron'></div>
         <div className='textos'><h2 className='titulos'>Junte-se a nós para salvar vidas!</h2>
           <div className='seja-parceiro'>
             <p className='escrita-textos'>Seja um parceiro em nossa missão de doação de sangue e<br /> faça a diferença na nossa cidade.</p>
@@ -116,12 +116,7 @@ export default function inicio() {
     </main>
     <footer>
       <div className='footer-content'>
-        <div id='caminho_rede' >
-          <ul>
-            <img className='icon_insta' src={insta} alt="logo instagram" />
-            <img className='QR_insta' src="" alt="Gr" />
-          </ul>
-        </div>
+
         <div id='lado_direito_footer'>
           <div className='rodape'>
             <ul>
@@ -134,7 +129,7 @@ export default function inicio() {
           <div className='rodape-rede'>
             <ul>
               <h4>Contatos</h4>
-              <a href="">Instagram</a>
+              <a href="https://instagram.com/gotade.esperanca?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D">Instagram</a>
           
             </ul>
           </div>

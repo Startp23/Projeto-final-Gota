@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './cadastro.css';
 import { Link } from 'react-router-dom';
 import face_cadastro_doador from '../img/facebook.png';
@@ -81,7 +81,7 @@ export default function cadastro() {
                           <div className="div_botao_doador">
   
                             <Link to='/' ><button className='Botao_voltar_login_tela_doador_cadastro'>Voltar</button></Link>
-                            <Link to='/inipos' ><button className='Botao_entrar_login_tela_doador_cadastro'>Entrar</button></Link>
+                            <Link to='/inipos' ><button disabled={Object.keys(errors).length > 0} className='Botao_entrar_login_tela_doador_cadastro'>Entrar</button></Link>
                           
                           </div>
                    

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Tela_de_confirmacao{
+    background-color: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  #tela-confirmar{
+    background-color: #ffffff;
+    width: 50%;
+    max-width: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    height: 90%;
+  }
+  .confirmar{
+    margin-top: 20%;
+  }
+  .texto_confirma{
+    color: #146DC6;
+    margin-bottom: 50px;
+  }
+  #botao_confirmacao_voltar{
+    color: #146DC6;
+    background: #f1f1f1;
+    border: 2px solid #146DC6;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 8px ;
+  }

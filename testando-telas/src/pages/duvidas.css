@@ -1,0 +1,378 @@
+/*estilos comuns*/
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar-duvidas {
+      display: flex;
+      align-items: center;
+      background-color: #BC1818;
+      box-shadow: 0px 5px 10px  rgb(131, 130, 130);
+    }
+    .topo-site-duvidas{
+      border-bottom: 2px solid red;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    
+    button:hover {
+      transform: scale(1.08);
+    }
+    
+    .text-doe-sangue-duvidas button {
+      border: 1px solid #BC1818;
+      background: none;
+      border-radius: 8px;
+         transition: transform 100ms linear;
+    }
+    #doe-agora-duvidas{
+      color: #ffffff;
+      background: #146DC6;
+      border: none;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      width: 90px;
+      height: 35px;
+      transition: transform 100ms linear;
+    }
+    #no-doador-duvidas{
+      background: none;
+      border: 1px solid red;
+      font-size: 15px;
+      width: 130px;
+      height: 35px;
+      transition: transform 100ms linear;
+    }
+    #bolinha_desfocada1-duvidas{
+      height: 100px;
+      width: 100px;
+      border: 100px;
+      background: #BC1818;
+      filter: blur(70px);
+      z-index: 0;
+      position: absolute;
+      margin-left: 30%;
+    }
+    .textos-duvidas {
+      border-radius: 5px;
+      background: rgba(217, 217, 217, 0.30);
+    }
+    
+    .text-doe-sangue-duvidas h1 {
+      color: #D50000;
+    }
+    .titulos-duvidas{
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .escrita-textos-duvidas{
+      font-size: 15px;
+      font-weight: 300;
+    }
+  .textos-duvidas h3{
+    font-size: 30px;
+    font-weight: 400;
+  }
+    .seja-parceiro-duvidas {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .textos-duvidas button {
+      border: 1px solid #BC1818;
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 15px;
+      height: 40px;
+      width: 150px;
+      transition: transform 100ms linear;
+      margin-right: 5%;
+    }
+    .textos-duvidas button:hover {
+      transform: scale(1.08);
+    }
+    
+    .textos-duvidas h3 {
+      color: #146DC6;
+    }
+    
+    .textos-duvidas h2 {
+      color: #D50000;
+    }
+    
+    .beneficios-duvidas {
+      display: flex;
+    }
+    
+    .beneficios-duvidas img{
+      max-height: 400px;
+    }
+    
+    footer{
+      background-color: #BC1818;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      height: 200px;
+    }
+    
+    .footer-content-duvidas{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    #lado_direito_footer-duvidas{
+      display: flex;
+      width: 50%;
+    }
+    .rodape-duvidas{
+      width: 50%;
+      display: inline-flex;
+      justify-content: space-between;
+      margin-left: 10%;
+    }
+    .rodape-rede-duvidas{
+      margin-top: 6%;
+    }
+    #caminho_rede-duvidas{
+      margin-top: 3%;
+    }
+    footer ul{
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    footer h4{
+      color: #ffffff;
+    }
+    
+    footer a{
+      color: #ffffff;
+      text-decoration: none;
+    
+    }
+    
+    
+    
+    /* Estilos para telas grandes */
+    @media (min-width: 768px) {
+    
+      /* Barra suspensa */
+      .navbar-duvidas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #BC1818;
+        padding: 10px;
+      }
+    
+      .navbar-bran-duvidas img {
+        width: 200px;
+        height: 50px;
+      }
+    
+      .menu_item-duvidas ul {
+        display: flex;
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+      }
+    
+      .menu_item-duvidas a {
+        color: #ffffff;
+      }
+    
+      .item-click-duvidas,
+      .item-click-duvidas:visited {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+      }
+    
+      .menu_item-duvidas button {
+        cursor: pointer;
+        background: none;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-left: 20px;
+      }
+    
+      .topo-site-duvidas {
+        display: flex;
+        justify-content: space-around;
+      }
+    
+    
+      .text-doe-sangue-duvidas {
+        margin-top: 100px;
+      }
+    
+      .btn-doe-duvidas {
+        display: flex;
+        position: relative;
+        right: 25px;
+      }
+    
+      .text-doe-sangue-duvidas button {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    
+      .seja-parceiro-duvidas button {
+        margin-left: 100px;
+      }
+    
+      .informacao-duvidas {
+        margin-top: 70px;
+        width: 70vw;
+        margin-left: 200px;
+      }
+    
+      .textos-duvidas {
+        margin-top: 30px;
+      }
+    
+      .textos-duvidas h2,
+      h3,
+      p,
+      img {
+        
+        margin-bottom: 20px;
+      }
+    
+      hr {
+        color: #BC1818;
+      }
+    
+    
+    }
+    
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px )  {
+    
+      /* Barra suspensa */
+      .navbar-duvidas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+    
+      .navbar-bran-duvidas img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    
+      #end-duvidas{
+        display: flex;
+        margin-left: 25px;
+      }
+    
+      .menu_item-duvidas ul {
+        display: flow-root;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+   
+      }
+    
+      .menu_item-duvidas button {
+        height: 30px;
+        cursor: pointer;
+        background: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-left: 30px;
+        font-size: 10px;
+        margin-top: 2%;
+    
+      }
+    
+      .item-click-duvidas,
+      .item-click-duvidas:visited {
+        color: #f0f0f0;
+        text-decoration: none;
+        padding: 10px;
+      }
+    
+      #imgsangue-duvidas {
+        width: 300px;
+      }
+    
+      .topo-site-duvidas {
+        text-align: center;
+      }
+    
+      .btn-doe-duvidas {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 8px;
+      }
+    
+      .informacao-duvidas {
+    
+        width: 90vw;
+        margin-top: 50px;
+        margin-left: 15px;
+      }
+    
+      hr {
+        color: #BC1818;
+      }
+    
+    
+      .textos-duvidas {
+        margin-top: 20px;
+      }
+    
+      .beneficios-duvidas{
+        flex-direction: column;
+      }
+    
+      .beneficios-duvidas img {
+        max-width: 300px;
+        height: 300px;
+        
+      }
+    
+      footer a{
+        color: #ffffff;
+        text-decoration: none;
+    
+      }
+    
+    }
+    @media (max-width: 350px ) {
+      .textos-duvidas button {
+        border: 1px solid #BC1818;
+        border-radius: 8px;
+        background-color: #ffffff;
+        font-size: 10px;
+        height: 40px;
+        width: 150px;
+        margin-right: 5%;
+      }
+      footer ul{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+      }
+      #caminho_rede-duvidas{
+        display: none;
+      }
+      #lado_direito_footer-duvidas{
+        display: flex;
+        width: 100%;
+      }
+      .rodape-rede-duvidas{
+        margin-top: 19%;
+      }
+    } 

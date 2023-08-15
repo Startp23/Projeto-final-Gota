@@ -1,0 +1,379 @@
+/*estilos comuns*/
+
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar-duvidas_pos-pos {
+      display: flex;
+      align-items: center;
+      background-color: #BC1818;
+      box-shadow: 0px 5px 10px  rgb(131, 130, 130);
+    }
+    .topo-site-duvidas_pos-pos{
+      border-bottom: 2px solid red;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    
+    button:hover {
+      transform: scale(1.08);
+    }
+    
+    .text-doe-sangue-duvidas_pos-pos button {
+      border: 1px solid #BC1818;
+      background: none;
+      border-radius: 8px;
+      transition: transform 100ms linear;
+    }
+    #doe-agora-duvidas_pos-pos{
+      color: #ffffff;
+      background: #146DC6;
+      border: none;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      width: 90px;
+      height: 35px;
+      transition: transform 100ms linear;
+    }
+    #no-doador-duvidas_pos-pos{
+      background: none;
+      border: 1px solid red;
+      font-size: 15px;
+      width: 130px;
+      height: 35px;
+      transition: transform 100ms linear;
+    }
+    #bolinha_desfocada1-duvidas_pos-pos{
+      height: 100px;
+      width: 100px;
+      border: 100px;
+      background: #BC1818;
+      filter: blur(70px);
+      z-index: 0;
+      position: absolute;
+      margin-left: 30%;
+    }
+    .textos-duvidas_pos-pos {
+      border-radius: 5px;
+      background: rgba(217, 217, 217, 0.30);
+    }
+    
+    .text-doe-sangue-duvidas_pos-pos h1 {
+      color: #D50000;
+    }
+    .titulos-duvidas_pos-pos{
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .escrita-textos-duvidas_pos-pos{
+      font-size: 15px;
+      font-weight: 300;
+    }
+  .textos-duvidas_pos-pos h3{
+    font-size: 30px;
+    font-weight: 400;
+  }
+    .seja-parceiro-duvidas_pos-pos {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .textos-duvidas_pos-pos button {
+      border: 1px solid #BC1818;
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 15px;
+      height: 40px;
+      width: 150px;
+      transition: transform 100ms linear;
+      margin-right: 5%;
+    }
+    .textos-duvidas_pos-pos button:hover {
+      transform: scale(1.08);
+    }
+    
+    .textos-duvidas_pos-pos h3 {
+      color: #146DC6;
+    }
+    
+    .textos-duvidas_pos-pos h2 {
+      color: #D50000;
+    }
+    
+    .beneficios-duvidas_pos-pos {
+      display: flex;
+    }
+    
+    .beneficios-duvidas_pos-pos img{
+      max-height: 400px;
+    }
+    
+    footer{
+      background-color: #BC1818;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .footer-content-duvidas_pos-pos{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    #lado_direito_footer-duvidas_pos-pos{
+      display: flex;
+      width: 50%;
+    }
+    .rodape-duvidas_pos-pos{
+      width: 50%;
+      display: inline-flex;
+      justify-content: space-between;
+      margin-left: 10%;
+    }
+    .rodape-rede-duvidas_pos-pos{
+      margin-top: 6%;
+    }
+    #caminho_rede-duvidas_pos-pos{
+      margin-top: 3%;
+    }
+    footer ul{
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    footer h4{
+      color: #ffffff;
+    }
+    
+    footer a{
+      color: #ffffff;
+      text-decoration: none;
+    
+    }
+    
+    
+    
+    /* Estilos para telas grandes */
+    @media (min-width: 768px) {
+    
+      /* Barra suspensa */
+      .navbar-duvidas_pos-pos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #BC1818;
+        padding: 10px;
+      }
+    
+      .navbar-bran-duvidas_pos-pos img {
+        width: 200px;
+        height: 50px;
+      }
+    
+      .menu_item-duvidas_pos-pos ul {
+        display: flex;
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+      }
+    
+      .menu_item-duvidas_pos-pos a {
+        color: #ffffff;
+      }
+    
+      .item-click-duvidas_pos-pos,
+      .item-click-duvidas_pos-pos:visited {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+      }
+    
+      #login-menu-duvidas_pos-pos  {
+        cursor: pointer;
+        background: #BC1818;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-left: 20px;
+      }
+    
+      .topo-site-duvidas_pos-pos {
+        display: flex;
+        justify-content: space-around;
+      }
+    
+    
+      .text-doe-sangue-duvidas_pos-pos {
+        margin-top: 100px;
+      }
+    
+      .btn-doe-duvidas_pos-pos {
+        display: flex;
+        position: relative;
+        right: 25px;
+      }
+    
+      .text-doe-sangue-duvidas_pos-pos button {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    
+      .seja-parceiro-duvidas_pos-pos button {
+        margin-left: 100px;
+      }
+    
+      .informacao-duvidas_pos-pos {
+        margin-top: 70px;
+        width: 70vw;
+        margin-left: 200px;
+      }
+    
+      .textos-duvidas_pos-pos {
+        margin-top: 30px;
+      }
+    
+      .textos-duvidas_pos-pos h2,
+      h3,
+      p,
+      img {
+        
+        margin-bottom: 20px;
+      }
+    
+      hr {
+        color: #BC1818;
+      }
+    
+    
+    }
+    
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px )  {
+    
+      /* Barra suspensa */
+      .navbar-duvidas_pos-pos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+    
+      .navbar-bran-duvidas_pos-pos img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    
+      #end-duvidas_pos-pos{
+        display: flex;
+        margin-left: 25px;
+      }
+    
+      .menu_item-duvidas_pos-pos ul {
+        display: flow-root;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+   
+      }
+    
+      .menu_item-duvidas_pos-pos button {
+        height: 30px;
+        cursor: pointer;
+        background: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-left: 30px;
+        font-size: 10px;
+        margin-top: 2%;
+    
+      }
+    
+      .item-click-duvidas_pos-pos,
+      .item-click-duvidas_pos-pos:visited {
+        color: #f0f0f0;
+        text-decoration: none;
+        padding: 10px;
+      }
+    
+      #imgsangue-duvidas_pos-pos {
+        width: 300px;
+      }
+    
+      .topo-site-duvidas_pos-pos {
+        text-align: center;
+      }
+    
+      .btn-doe-duvidas_pos-pos {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 8px;
+      }
+    
+      .informacao-duvidas_pos-pos {
+    
+        width: 90vw;
+        margin-top: 50px;
+        margin-left: 15px;
+      }
+    
+      hr {
+        color: #BC1818;
+      }
+    
+    
+      .textos-duvidas_pos-pos {
+        margin-top: 20px;
+      }
+    
+      .beneficios-duvidas_pos-pos{
+        flex-direction: column;
+      }
+    
+      .beneficios-duvidas_pos-pos img {
+        max-width: 300px;
+        height: 300px;
+        
+      }
+    
+      footer a{
+        color: #ffffff;
+        text-decoration: none;
+    
+      }
+    
+    }
+    @media (max-width: 350px ) {
+      .textos-duvidas_pos-pos button {
+        border: 1px solid #BC1818;
+        border-radius: 8px;
+        background-color: #ffffff;
+        font-size: 10px;
+        height: 40px;
+        width: 150px;
+        margin-right: 5%;
+      }
+      footer ul{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+      }
+      #caminho_rede-duvidas_pos-pos{
+        display: none;
+      }
+      #lado_direito_footer-duvidas_pos-pos{
+        display: flex;
+        width: 100%;
+      }
+      .rodape-rede-duvidas_pos-pos{
+        margin-top: 19%;
+      }
+    } 
